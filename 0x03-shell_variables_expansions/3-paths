@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $PATH | awk -F ":" '{print NF-1}'
+echo $PATH | tr ':' '\n' | wc -l
